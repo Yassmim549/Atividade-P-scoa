@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header {
+    background-color: white;
+    color: #7c4f8d;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navbar a {
+    background-color: #d3b8dd;
+    border-radius: 15px;
+    color: #7c4f8d;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.navbar a:hover,
+.navbar .ativo {
+    background-color: #a56abd;
+    color: white;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 30px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria figure {
+    width: 220px;
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+section:not(.galeria):not(.info) {
+    background-color: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 85%;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.info{
+    margin: 30px auto;
+    padding: 10px;
+    width: 85%;
+    border-left: 3px solid #a56abd;
+    border-radius: 15px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.cards h2 {
+    color: #7c4f8d;
+    margin: 20px 0;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #f3e9f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    word-break: break-word;
+}
+.card {
+    display: block;
+    padding: 20px;
+    background: #f3e7d8;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.card:hover {
+    background: #a56abd;
+    color: white;
+    transform: scale(1.05);
+}
+.referencia {
+    background: #f3e7d8;
+}
+.referencia a {
+    text-decoration: none;
+}
+.footer {
+    background: #7c4f8d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
